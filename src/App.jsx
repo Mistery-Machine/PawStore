@@ -4,7 +4,7 @@ import products from './data/products.json';
 import Header from './shared/components/Header/Header';
 import Footer from './shared/components/Footer/Footer';
 import { HomePage } from './features/home';
-import { CatalogPage } from './features/catalog';
+import { CatalogPage, ProductDetailPage } from './features/catalog';
 
 function App() {
   const [currentView, setCurrentView] = useState(VIEWS.HOME);
@@ -26,7 +26,10 @@ function App() {
           <CatalogPage products={products} onViewDetails={handleViewDetails} />
         )}
         {currentView === VIEWS.PRODUCT_DETAIL && (
-          <p>Detalle de: {selectedProduct.nombre}</p>
+          <ProductDetailPage
+            product={selectedProduct}
+            onBack={() => setCurrentView(VIEWS.CATALOG)}
+          />
         )}
         {currentView === VIEWS.CONTACT && <p>Vista actual: {currentView}</p>}
       </main>
