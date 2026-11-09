@@ -1,16 +1,54 @@
-# React + Vite
+# PawStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Catálogo de productos para mascotas hecho con React y Vite. Es la Etapa 1 del proyecto: una aplicación de una sola página con datos estáticos y sin backend.
 
-Currently, two official plugins are available:
+## Qué incluye
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Página de inicio.
+- Catálogo con las tarjetas de producto.
+- Detalle de cada producto.
+- Header y Footer visibles en todas las vistas.
 
-## React Compiler
+La navegación entre vistas funciona sin recargar la página y sin librerías de rutas. Los productos se leen del archivo `src/data/products.json`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requisitos
 
-## Expanding the ESLint configuration
+- Node.js 18 o superior.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación
+
+```bash
+git clone https://github.com/Mistery-Machine/PawStore.git
+cd PawStore
+npm install
+```
+
+## Ejecución
+
+```bash
+npm run dev
+```
+
+Después se abre en el navegador la dirección que muestra la terminal, normalmente `http://localhost:5173/`.
+
+## Otros comandos
+
+```bash
+npm run build
+npm run lint
+```
+
+## Estructura del proyecto
+
+```
+src/
+├── config/
+├── data/
+├── features/
+│   ├── home/
+│   └── catalog/
+├── shared/
+│   └── components/
+├── styles/
+└── utils/
+```
