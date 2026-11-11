@@ -11,6 +11,8 @@ Catálogo de productos para mascotas hecho con React y Vite. Es la Etapa 1 del p
 
 La navegación entre vistas funciona sin recargar la página y sin librerías de rutas. Los productos se leen del archivo `src/data/products.json`.
 
+> **Nota sobre las imágenes:** el archivo `products.json` se mantiene tal como lo proporcionó PawStore. Sus imágenes apuntan a `via.placeholder.com`, un servicio que ya no está disponible, por eso no cargan en el catálogo ni en el detalle.
+
 ## Requisitos
 
 - Node.js 18 o superior.
