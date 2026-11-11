@@ -26,3 +26,8 @@ body {
 main {
   flex: 1;
 }
+
+.contact__placeholder {
+  padding: 48px 24px;
+  text-align: center;
+}

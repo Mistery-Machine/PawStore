@@ -8,7 +8,7 @@ const SOCIAL_LINKS = [
 function Footer() {
   return (
     <footer className="footer">
-      <p className="footer__copy">© PawStore 2025 — Todos los derechos reservados.</p>
+      <p className="footer__copy">© PawStore 2026 — Todos los derechos reservados.</p>
       <ul className="footer__links">
         {SOCIAL_LINKS.map((link) => (
           <li key={link.label}>

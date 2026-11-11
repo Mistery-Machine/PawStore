@@ -31,7 +31,9 @@ function App() {
             onBack={() => setCurrentView(VIEWS.CATALOG)}
           />
         )}
-        {currentView === VIEWS.CONTACT && <p>Vista actual: {currentView}</p>}
+        {currentView === VIEWS.CONTACT && (
+          <p className="contact__placeholder">Página de contacto próximamente.</p>
+        )}
       </main>
       <Footer />
     </>
